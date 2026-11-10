@@ -1,0 +1,44 @@
+{
+  "name": "codenames-darkline-protocol",
+  "version": "1.0.0",
+  "private": true,
+  "description": "機密代碼：暗線任務 (Codenames: Darkline Protocol) - 現代情報中心風格網頁桌遊，支援單人 AI、多人即時連線與人機混合組隊",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/server/index.ts",
+    "build": "vite build && tsc --noEmit",
+    "start": "cross-env NODE_ENV=production tsx src/server/index.ts",
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.9",
+    "canvas-confetti": "^1.9.3",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "framer-motion": "^12.4.7",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
+    "tailwind-merge": "^3.0.2",
+    "tailwindcss": "^4.0.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@types/canvas-confetti": "^1.9.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cross-env": "^7.0.3",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vite": "^6.2.0",
+    "vitest": "^3.0.7"
+  }
+}
